@@ -40,6 +40,9 @@ if(elToDoForm){
       console.log(test);
     }
 
+    newElement.classList.add('border-bottom')
+    newElement.classList.add('w-50')
+    newElement.classList.add('p-1')
 
     elToDoInput.value = '';
 
