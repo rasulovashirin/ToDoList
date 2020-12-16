@@ -20,18 +20,18 @@ if(elToDoForm){
 
     if(test.includes(elToDoInput.value)){
       elWarning.textContent =('List includes this element!');
+      elToDoInput.value = '';
       return
     }else{
       elWarning.textContent =('');
-
     }
-
 
     if(!isImportant){
       test.push(elToDoInput.value);
       newElement.textContent = (test[test.length - 1]);
       console.log(test);
     }
+
     if(isImportant){
       test.unshift(elToDoInput.value);
       newElement.textContent = test[0];
