@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Bootstrap starter</title>
+    <title>To Do List</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <div class="container text-center">Lorem ipsum dolor sit amet.</div>
-
+    <section class="todo p-5">
+        <div class="container">
+            <form class="todo__form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="todo__input" type="text" name="todo-input" aria-label="to do thing" placeholder="What needs to be done?" required>
+                <input class="todo__checkbox" type="checkbox" name="todo-checkbox" aria-label="to do checkbox">
+                <button class="btn btn-light btn-sm ml-1" type="submit">Add</button>
+            </form>
+            <div class="results d-flex flex-column"></div>
+            <div class="wrong-message mt-3 text-warning"></div>
+        </div>
+    </section>
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
