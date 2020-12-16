@@ -26,6 +26,8 @@ if(elToDoForm){
       return
     }else{
       elWarning.textContent =('');
+      elWarning.classList.remove('alert');
+      elWarning.classList.remove('alert-warning');
     }
 
     if(!isImportant){
