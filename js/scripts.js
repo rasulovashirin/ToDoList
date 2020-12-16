@@ -40,11 +40,11 @@ if(elToDoForm){
       test.unshift(elToDoInput.value);
       newElement.textContent = test[0];
       newElement.classList.add('important');
-      newElement.classList.add('font-weight-bold');
+      newElement.classList.add('text-primary');
       console.log(test);
     }
 
-    newElement.classList.add('border-bottom')
+    // newElement.classList.add('border-bottom')
     newElement.classList.add('w-50')
     newElement.classList.add('p-1')
     newElement.classList.add('mb-3')
