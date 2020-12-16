@@ -20,6 +20,8 @@ if(elToDoForm){
 
     if(test.includes(elToDoInput.value)){
       elWarning.textContent =('List includes this element!');
+      elWarning.classList.add('alert');
+      elWarning.classList.add('alert-warning');
       elToDoInput.value = '';
       return
     }else{
@@ -43,6 +45,7 @@ if(elToDoForm){
     newElement.classList.add('border-bottom')
     newElement.classList.add('w-50')
     newElement.classList.add('p-1')
+    newElement.classList.add('mb-3')
 
     elToDoInput.value = '';
 
